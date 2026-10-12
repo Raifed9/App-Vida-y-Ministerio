@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reunión vida y ministerio</title>
+<style>
+:root{--bg:#f6f5f2;--card:#fff;--tx:#1f2328;--mu:#6b7178;--bd:#dcd9d2;--ac:#2f6f7e;--ac2:#fff;--dg:#b3261e;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17191b;--card:#222527;--tx:#ecebe8;--mu:#9aa0a6;--bd:#383c3f;--ac:#5fb0c1;--ac2:#10181a;--dg:#f2918a}}
+:root[data-theme="dark"]{--bg:#17191b;--card:#222527;--tx:#ecebe8;--mu:#9aa0a6;--bd:#383c3f;--ac:#5fb0c1;--ac2:#10181a;--dg:#f2918a}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5;padding:10px 14px;border-bottom:1px solid var(--bd)}
+h1{font-size:17px;margin:0 0 8px}
+nav{display:flex;gap:6px;flex-wrap:wrap}
+nav button,.btn{border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:7px 12px;border-radius:8px;font:inherit;cursor:pointer}
+nav button.on,.btn.pri{background:var(--ac);color:var(--ac2);border-color:var(--ac)}
+.btn.dg{color:var(--dg)}
+main{max-width:860px;margin:0 auto;padding:12px 14px 60px}
+.wk{background:var(--card);border:1px solid var(--bd);border-radius:12px;margin-bottom:10px;overflow:hidden}
+.wk>summary{padding:12px 14px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;gap:8px}
+.wk>summary small{color:var(--mu);font-weight:400}
+.body{padding:4px 14px 12px}
+.grp{font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;color:#fff;background:#6b7178;padding:7px 11px;border-radius:7px;margin:18px 0 6px;font-weight:700}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:start;margin:0;padding:10px 2px;border-bottom:1px solid var(--bd)}
+.row label{font-size:14px;font-weight:700}.row label small{color:var(--mu);font-weight:400}.row>div>div{margin-bottom:4px}
+input,select{width:100%;padding:7px 9px;border:1px solid var(--bd);border-radius:7px;background:var(--bg);color:var(--tx);font:inherit}
+.def{display:grid;grid-template-columns:1fr 70px;gap:6px;background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:8px;margin-bottom:8px}
+.def .act{grid-column:1/3;display:flex;gap:6px;flex-wrap:wrap}
+.def select{width:auto;flex:1;min-width:120px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.mu{color:var(--mu);font-size:13px}
+header{display:flex;align-items:center;gap:10px}header h1{margin:0;flex:1}.burger{font-size:20px;line-height:1;padding:6px 12px}
+.menu{position:absolute;top:100%;left:0;right:0;background:var(--card);border-bottom:1px solid var(--bd);display:none;flex-direction:column;padding:8px 14px}.menu.open{display:flex}.menu button{text-align:left}
+.row>div select{margin-bottom:4px}.warn{grid-column:1/-1;background:#fdecea;color:#7a1710;border:1px solid #f1aeb5;border-radius:8px;padding:8px;font-size:13.5px}.warn.y{background:#fff3cd;color:#664d03;border-color:#e6c65c}.yl{color:#b7791f}.ro #addw,.ro [data-ed],.ro [data-sh],.ro .shr{display:none}.chk{display:flex;align-items:center;gap:6px;font-size:13px}.chk input{width:auto}.wa .btn{text-decoration:none;white-space:nowrap}.pr{display:block;width:100%;text-align:left;margin:4px 0}.pr.on{border-color:var(--ac);font-weight:700}.btn.blu{background:#2f6fd0;color:#fff;border-color:#2f6fd0}.btn.wag{background:#25a244;color:#fff;border-color:#25a244}.shr{margin-top:14px;padding-top:8px;border-top:1px solid var(--bd)}.stl{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--mu);margin:8px 0 0}.shr .bar{margin:5px 0 8px}.shr .btn{padding:5px 12px;font-size:13.5px}.menu button.ses{background:#c62828;color:#fff;border-color:#c62828}.usr{font-weight:700;color:#2e8b57;padding:2px 4px 8px;font-size:15px}.wk.nx{border:2px solid var(--ac)}.gw>summary{padding:11px 14px;font-weight:700;cursor:pointer;background:var(--card);border:1px solid var(--bd);border-radius:12px;margin-bottom:10px}.gw summary small{color:var(--mu);font-weight:400}.warn .btn{margin:6px 6px 0 0;padding:4px 10px}
+.pc{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:10px;margin-bottom:8px}.g2{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px}.hist{font-size:13px;color:var(--mu);margin-top:6px}.pc summary{cursor:pointer}.fl{font-size:12.5px;color:var(--dg);margin:-2px 0 4px}.fl small{font-size:12.5px}.bdg{padding:1px 9px;border-radius:99px;font-size:12px;color:#fff;margin-left:6px}.ba{background:#8e2f4a}.bs{background:#2f6f7e}.bh{background:#b0701d}.bp{background:#2f6fd0}.ed{display:flex;gap:4px;align-items:center}.ed input[type=number]{width:62px;flex:none}.ed .btn{padding:4px 9px}.wsv .hist{color:inherit}
+@media(max-width:520px){.row{grid-template-columns:1fr}}
+</style><script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script></head><body>
+<header><button class="btn burger" id="bg" aria-label="Menú">☰</button><h1>Reunión vida y ministerio</h1><button class="btn" id="un" aria-label="Deshacer" title="Deshacer" style="display:none">↶</button>
+<nav class="menu" id="nav"></nav></header>
+<main id="m"></main>
+<script>
+const KEY="vym_v1";
+const G=["Inicio","Tesoros de la Biblia","Seamos mejores maestros","Nuestra vida cristiana","Final"];
+const D0=[
+["sv","Sonido y video",0,0],["mic","Micrófonos / acomodadores",0,0],["pres","Presidente",0,0],["orI","Oración inicial",0,0],
+["tes","Tesoros de la Biblia",10,1],["gem","Busquemos perlas escondidas",10,1],["lec","Lectura de la Biblia",4,1],
+["m4","4. Empiece conversaciones",3,2],["m5","5. Haga revisitas",4,2],["m6","6. Haga discípulos",5,2],["m7","7. Discurso / otra parte",5,2],
+["v8","8. Parte de Nuestra vida cristiana",15,3],
+["cbc","Conductor del estudio bíblico",30,3],["cbl","Lector del estudio bíblico",0,3],["orF","Oración final",0,4],["lim","Equipo de limpieza",0,4]];
+const F=["Oct 9","Oct 16","Oct 23","Oct 30","Nov 6","Nov 13","Nov 20","Nov 27","Dec 4","Dec 11","Dec 18","Dec 25","Jan 1"];
+const A={
+sv:["Fernández de León, Juan","Del Signore, Bernardo","Crai, Claudio","Del Signore, Lucas"],
+mic:["Kotla Vijay","Pintos, Michael","Pintos, Michael","Michelena, Federico"],
+pres:["Del Signore, Bernardo","Fernández de León, Juan","Fernández de León, Juan","Bernal, Ronald","Del Signore, Lucas","Cantu, William","Fernández de León, Juan","Del Signore, Bernardo","Bernal, Ronald","Del Signore, Lucas","Cantu, William","Fernández de León, Juan","Del Signore, Bernardo"],
+tes:["Del Signore, Lucas","Bernal, Ronald","Cantu, William","Fernández de León, Juan","Bernal, Ronald","Astorino, Fabrizzio","Cantu, William","Del Signore, Lucas","Fernández de León, Juan","Bernal, Ronald","Astorino, Fabrizzio","Cantu, William","Del Signore, Lucas"],
+lec:["Crai, Claudio","Kotla Vijay","Brignoni, Benjamín","Pintos, Michael","Brignoni, Benjamín","Robinson, Michael","Pintos, Michael","Bernal, Ronald","Crai, Claudio","Brignoni, Benjamín","Michelena, Federico","Robinson, Michael","Astorino, Fabrizzio"],
+cbc:["Bernal, Ronald","Del Signore, Bernardo","Del Signore, Lucas","Del Signore, Lucas","Cantu, William","Bernal, Ronald","Del Signore, Lucas","Fernández de León, Juan","Del Signore, Bernardo","Cantu, William","Bernal, Ronald","Del Signore, Lucas","Fernández de León, Juan"],
+cbl:["Astorino, Fabrizzio","Robinson, Michael","Pintos, Michael","Michelena, Federico","Brignoni, Benjamín","Robinson, Michael","","Bernal, Ronald","Crai, Claudio","Brignoni, Benjamín","Michelena, Federico","Kotla Vijay","Astorino, Fabrizzio"],
+orF:["Bernal, Ronald","Robinson, Michael","Brignoni, Benjamín","","Cantu, William","Bernal, Ronald","Del Signore, Lucas","Fernández de León, Juan","Del Signore, Bernardo","Cantu, William","Bernal, Ronald","Del Signore, Lucas","Fernández de León, Juan"],
+lim:"FGABCDEFGABCD".split("").map(x=>"Equipo "+x)};
+function seed(){return{defs:D0.map(([id,name,dur,g])=>({id,name,dur,g})),weeks:F.map((d,i)=>({id:"w"+i,date:d+(i<12&&i>=0?"":"")+" "+(i<12?"2026":"2027"),a:Object.fromEntries(Object.entries(A).filter(([k,v])=>v[i]).map(([k,v])=>[k,v[i]]))}))}}
+let S=seed(),PUB=null,PUBJ="";
+const REP=(k,v)=>k=="tel"?undefined:v,clone=o=>JSON.parse(JSON.stringify(o));
+function setS(){let w=null;if(AUTH){try{w=JSON.parse(localStorage.getItem(KEY))}catch(e){}}S=AUTH?(w&&w.defs?w:clone(PUB||seed())):(PUB||seed());LAST=null;UNDO=[];EDIT.clear()}
+function dirty(){return AUTH&&PUB&&JSON.stringify(S,REP)!==PUBJ}
+async function pubData(){const dl=await dlc();await dl.save({filename:"datos.json",data:JSON.stringify(S,REP)});alert("Se descargó datos.json. Súbelo a tu repositorio de GitHub reemplazando el anterior para que todos vean los cambios.")}
+let tab="w",AUTH=false;try{AUTH=sessionStorage.getItem("vym_auth")=="1"}catch(e){}
+let LAST=null,UNDO=[],PQ="";
+function updU(){const b=document.getElementById("un");if(b)b.style.display=AUTH&&UNDO.length?"":"none"}
+function save(){if(!AUTH)return;try{const j=JSON.stringify(S);if(LAST!=null&&j!==LAST){UNDO.push(LAST);if(UNDO.length>40)UNDO.shift()}LAST=j;localStorage.setItem(KEY,j)}catch(e){}updU()}
+function undo(){if(!UNDO.length)return;const p=UNDO.pop();S=JSON.parse(p);LAST=p;try{localStorage.setItem(KEY,p)}catch(e){}render()}
+function nrm(s){return String(s).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase()}
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const uid=()=>"d"+Math.random().toString(36).slice(2,8);
+const m=document.getElementById("m");
+function people(){const s=new Set();S.weeks.forEach(w=>Object.values(w.a).forEach(v=>v&&String(v).split(" / ").forEach(x=>x.trim()&&s.add(x.trim()))));return[...s].sort()}
+const FEM="Elizabeth Débora Abigaíl Ana Avril Florencia Sofía Inés Gabriela Irína Fiorella Bargavi Lucía Karien Denise Mikaela".split(" ");
+const TM={A:["Crai, Claudio","Arena, Abigaíl","Llanes, Irína","Alwar, Bargavi"],B:["Del Signore, Bernardo","De Castellet, Ana","Brignoni, Benjamín","Del Signore, Lucía"],C:["Del Signore, Lucas","Del Signore, Avril","Debia, Karien"],D:["Michelena, Federico","Ferraro, Florencia","Moreira, Denise"],E:["Astorino, Fabrizzio","Díaz, Sofía","Pérez, Mikaela"],F:["Fernández de León, Juan","Farina, Elizabeth","Maubrigades, Inés","Martinez, Fiorella"],G:["Robinson, Michael","Ferreira, Débora","Martinez, Gabriela","Bernal, Ronald"]};
+const tp=n=>FEM.includes(n.split(", ")[1])?"hermana":"hermano";
+function np(n){return{id:uid(),name:n,cat:"",tipo:tp(n),tel:"",team:""}}
+function mig(){
+if(!S.people)S.people=people().map(np);
+S.people=S.people.filter(p=>!/^Equipo [A-G]$/.test(p.name));
+S.people.forEach(p=>{if(!p.tipo)p.tipo=tp(p.name);if(p.tel==null)p.tel="";if(p.team==null)p.team="";if(p.cat=="Publicador"||p.tipo=="hermana")p.cat=""});
+if(!S.teams){S.teams=Object.keys(TM).map(k=>({id:"t"+k,name:"Equipo "+k}));Object.entries(TM).forEach(([k,ns])=>ns.forEach(n=>{let p=S.people.find(x=>x.name==n);if(!p){p=np(n);S.people.push(p)}p.team="t"+k}));S.people.sort((a,b)=>a.name.localeCompare(b.name))}
+S.weeks.forEach(w=>{const t=S.teams.find(t=>t.name==w.a.lim);if(t)w.a.lim=t.id});
+S.defs.forEach(d=>{if(d.fem==null)d.fem=["m4","m5","m7"].includes(d.id);if(d.req==null)d.req=""});
+if(!S.gemfix){S.weeks.forEach(w=>{if(w.a.pres&&!w.a.gem&&!(w.hid||[]).includes("gem"))w.a.gem=w.a.pres});S.defs.forEach(d=>{if(d.id=="gem"&&d.name=="Perlas escondidas")d.name="Busquemos perlas escondidas"});S.gemfix=1}
+save()}
+const CS=["Anciano","Siervo Ministerial"];
+function has(w,n){return w&&Object.entries(w.a).some(([k,v])=>k!="lim"&&k!="orI"&&k!="orF"&&String(v).split(" / ").includes(n))}
+function adef(w,n){return wdefs(w).filter(d=>d.id!="lim"&&String(w.a[d.id]||"").split(" / ").includes(n)).map(d=>d.id)}
+function dupi(wi,n){let L=adef(S.weeks[wi],n);if(L.includes("pres"))L=L.filter(x=>x!="gem");const pr=L.filter(x=>x=="orI"||x=="orF").map(x=>S.defs.find(d=>d.id==x).name.toLowerCase());return{dup:L.length>1,pr:L.length==2?pr:[],y:L.length==2&&pr.length>0}}
+function gr(p){return p.tipo=="hermana"?"Hermanas":p.cat||"Hermanos"}
+function badge(p){const h=p.tipo=="hermana",t=h?'<span class="bdg bh">Hermana</span>':'<span class="bdg bp">Hermano</span>';return t+(!h&&p.cat=="Anciano"?'<span class="bdg ba">Anciano</span>':!h&&p.cat=="Siervo Ministerial"?'<span class="bdg bs">Siervo Ministerial</span>':"")}
+function flag(wi,v,id){if(!v||!AUTH)return"";const a=[];const di=dupi(wi,v);if(di.dup)a.push(di.y?'<span class="yl">repetido (oración)</span>':"repetido en la reunión");if(id!="orI"&&id!="orF"&&streak(wi,v))a.push("3 semanas seguidas");const pp=S.people.find(p=>p.name==v);if(pp&&!okp(pp,id,wi))a.push("no permitido aquí");return a.length?"❗ <small>"+a.join(" · ")+"</small>":""}
+function refl(){m.querySelectorAll("select[data-d]").forEach(s=>{if(s.dataset.d=="lim")return;const f=document.getElementById(`f${s.dataset.w}_${s.dataset.d}_${s.dataset.k}`);if(f)f.innerHTML=flag(+s.dataset.w,s.value,s.dataset.d)})}
+function tmem(id){return id?S.people.filter(p=>p.team==id).map(p=>esc(p.name)).join("<br>"):""}
+function streak(wi,n){return has(S.weeks[wi],n)&&has(S.weeks[wi-1],n)&&has(S.weeks[wi-2],n)}
+function since(n,wi){for(let k=wi-1;k>=0;k--)if(adef(S.weeks[k],n).length)return wi-k;return 1e9}
+function pick(wi,id,k,v){let o='<option value="">—</option>';["Anciano","Siervo Ministerial","Hermanos","Hermanas"].forEach(c=>{const ps=S.people.filter(p=>gr(p)==c&&(okp(p,id,wi)||p.name==v)).map(p=>({p,s:since(p.name,wi)})).sort((a,b)=>b.s-a.s||a.p.name.localeCompare(b.p.name));if(ps.length)o+=`<optgroup label="${c}">`+ps.map(({p,s})=>`<option value="${esc(p.name)}" ${p.name==v?"selected":""}>${esc(p.name)} · ${s>=1e9?"sin previas":"hace "+s+" sem."}</option>`).join("")+"</optgroup>"});if(v&&!S.people.some(p=>p.name==v))o+=`<option selected>${esc(v)}</option>`;return `<select data-w="${wi}" data-d="${id}" data-k="${k}">${o}</select><div class="fl" id="f${wi}_${id}_${k}">${flag(wi,v,id)}</div>`}
+function dur(d){return d.dur?` <small>(${d.dur} min.)</small>`:""}
+function tpick(wi,id,v){return `<select data-w="${wi}" data-d="${id}" data-k="0"><option value="">—</option>${S.teams.map(t=>`<option value="${t.id}" ${t.id==v?"selected":""}>${esc(t.name)}</option>`).join("")}</select><div class="hist" id="tm${wi}">${tmem(v)}</div>`}
+const OPEN=new Set([nextW()].filter(Boolean)),GC=["#6b7178","#2f7d8c","#b8860b","#8b1a1a","#6b7178"];let BK,NX;
+function hist(p){const r=[];for(let wi=S.weeks.length-1;wi>=0;wi--){const w=S.weeks[wi];wdefs(w).forEach(d=>{if(d.id!="lim"&&String(w.a[d.id]||"").split(" / ").includes(p.name))r.push(`${esc(w.date)}: ${esc(d.name)}`)})}return r}
+function viewE(){
+let h=`<p class="mu">Perfil de cada persona con su historial. Las hermanas no llevan categoría. Los hermanos pueden ser Siervo Ministerial o Anciano. El equipo de limpieza es el mismo dato que en el menú Equipos de limpieza.</p><input id="pq" placeholder="Buscar persona…" value="${esc(PQ)}" style="margin-bottom:10px">`;
+S.people.forEach((p,i)=>{const hs=hist(p),cats=CS;
+h+=`<details class="pc" data-id="${p.id}" data-n="${esc(nrm(p.name))}" ${OPEN.has(p.id)?"open":""}><summary><b>${esc(p.name)}</b> ${badge(p)}</summary><div class="g2" style="margin-top:8px"><input data-pn="${i}" value="${esc(p.name)}"><input type="tel" data-pt="${i}" placeholder="Teléfono" value="${esc(p.tel)}"><select data-pk="${i}"><option value="hermano" ${p.tipo=="hermano"?"selected":""}>Hermano</option><option value="hermana" ${p.tipo=="hermana"?"selected":""}>Hermana</option></select><select data-pc="${i}" ${p.tipo=="hermana"?"disabled":""}><option value="">Sin categoría</option>${cats.map(c=>`<option ${p.cat==c?"selected":""}>${c}</option>`).join("")}</select><select data-pq="${i}"><option value="">Sin equipo de limpieza</option>${S.teams.map(t=>`<option value="${t.id}" ${p.team==t.id?"selected":""}>${esc(t.name)}</option>`).join("")}</select><button class="btn dg" data-pd="${i}">Eliminar</button></div><details><summary class="mu">Historial (${hs.length})</summary><div class="hist">${hs.slice(0,8).join("<br>")||"Sin asignaciones"}</div></details></details>`});
+m.innerHTML=h+`<div class="bar"><button class="btn pri" id="addp">+ Agregar persona</button></div>`;
+const q=(s,f)=>m.querySelectorAll(s).forEach(f);
+q("#pq",i=>{const ap=()=>m.querySelectorAll("details.pc").forEach(d=>d.style.display=!PQ||d.dataset.n.includes(nrm(PQ))?"":"none");i.oninput=()=>{PQ=i.value;ap()};ap()});
+q("[data-pn]",i=>i.onchange=()=>{const p=S.people[i.dataset.pn],nv=i.value.trim();if(!nv){i.value=p.name;return}setTimeout(render,0);S.weeks.forEach(w=>{for(const k in w.a)w.a[k]=String(w.a[k]).split(" / ").map(x=>x==p.name?nv:x).join(" / ")});p.name=nv;save()});
+q("[data-pt]",i=>i.onchange=()=>{S.people[i.dataset.pt].tel=i.value.trim();save()});
+q("[data-pk]",i=>i.onchange=()=>{const p=S.people[i.dataset.pk];p.tipo=i.value;if(i.value=="hermana")p.cat="";save();render()});
+q("[data-pc]",i=>i.onchange=()=>{S.people[i.dataset.pc].cat=i.value;save();render()});
+q("[data-pq]",i=>i.onchange=()=>{S.people[i.dataset.pq].team=i.value;save()});
+q("details.pc",d=>d.ontoggle=()=>{d.open?OPEN.add(d.dataset.id):OPEN.delete(d.dataset.id)});
+q("[data-pd]",b=>b.onclick=()=>{const p=S.people[b.dataset.pd];ask(b,`¿Eliminar a ${esc(p.name)} y sus asignaciones?`,()=>{S.weeks.forEach(w=>{for(const k in w.a){const r=String(w.a[k]).split(" / ").filter(x=>x!=p.name);r.length?w.a[k]=r.join(" / "):delete w.a[k]}});S.people.splice(b.dataset.pd,1);save();render()})});
+document.getElementById("addp").onclick=()=>{S.people.push({id:uid(),name:"Nuevo hermano",cat:"",tipo:"hermano",tel:"",team:""});save();render()};
+}
+function viewT(){
+let h=`<p class="mu">Los integrantes salen de la lista de Personas. Los cambios aquí y en el perfil de cada persona son el mismo dato.</p>`;
+S.teams.forEach((t,ti)=>{const ms=S.people.filter(p=>p.team==t.id);
+h+=`<div class="pc"><div class="g2"><input data-tn="${ti}" value="${esc(t.name)}"><button class="btn dg" data-td="${ti}">Eliminar equipo</button></div>`+ms.map(p=>`<div class="row" style="grid-template-columns:1fr auto"><span>${esc(p.name)}</span><button class="btn" data-tr="${p.id}">Quitar</button></div>`).join("")+`<select data-ta="${t.id}"><option value="">+ Agregar persona…</option>${S.people.filter(p=>p.team!=t.id).map(p=>`<option value="${p.id}">${esc(p.name)}${p.team?" ("+esc((S.teams.find(x=>x.id==p.team)||{}).name||"")+")":""}</option>`).join("")}</select></div>`});
+m.innerHTML=h+`<div class="bar"><button class="btn pri" id="addt">+ Agregar equipo</button></div>`;
+const q=(s,f)=>m.querySelectorAll(s).forEach(f);
+q("[data-tn]",i=>i.onchange=()=>{S.teams[i.dataset.tn].name=i.value.trim()||S.teams[i.dataset.tn].name;save()});
+q("[data-td]",b=>b.onclick=()=>{const t=S.teams[b.dataset.td];ask(b,`¿Eliminar ${esc(t.name)}?`,()=>{S.people.forEach(p=>{if(p.team==t.id)p.team=""});S.weeks.forEach(w=>{if(w.a.lim==t.id)delete w.a.lim});S.teams.splice(b.dataset.td,1);save();render()})});
+q("[data-tr]",b=>b.onclick=()=>{S.people.find(p=>p.id==b.dataset.tr).team="";save();render()});
+q("[data-ta]",s=>s.onchange=()=>{const p=S.people.find(p=>p.id==s.value);if(!p)return;const tid=s.dataset.ta,cur=S.teams.find(t=>t.id==p.team),mv=()=>{p.team=tid;save();render()};if(!cur||cur.id==tid)return mv();const card=s.parentElement;card.querySelectorAll(".warn").forEach(x=>x.remove());const x=document.createElement("div");x.className="warn";x.innerHTML=`<b>${esc(p.name)}</b> ya pertenece a <b>${esc(cur.name)}</b>.<br><button class="btn" data-ok>Eliminar de equipo actual y agregar en este</button><button class="btn" data-no>Cancelar</button>`;card.appendChild(x);x.querySelector("[data-ok]").onclick=mv;x.querySelector("[data-no]").onclick=()=>{s.value="";x.remove()}});
+document.getElementById("addt").onclick=()=>{S.teams.push({id:uid(),name:"Nuevo equipo"});save();render()};
+}
+const EDIT=new Set(),SNAP={};
+function wdefs(w){const h=w.hid||[],o=w.ov||{};return S.defs.filter(d=>!h.includes(d.id)).map(d=>({...d,...(o[d.id]||{})})).concat(w.ex||[])}
+function okp(p,id,wi){const d=wdefs(S.weeks[wi]).find(x=>x.id==id)||{},r=d.req||"";if(p.tipo=="hermana")return !!d.fem&&!r;return r=="AN"?p.cat=="Anciano":r=="SM"?(p.cat=="Anciano"||p.cat=="Siervo Ministerial"):true}
+function empt(w){return wdefs(w).filter(d=>d.id!="lim"&&!String(w.a[d.id]||"").trim())}
+function show(wi,d,w){if(d.id=="lim"){const t=S.teams.find(t=>t.id==w.a.lim);return t?`<b>${esc(t.name)}</b><div class="hist">${tmem(t.id)}</div>`:'<span class="mu">—</span>'}const vs=String(w.a[d.id]||"").split(" / ").filter(Boolean);return vs.length?vs.map(v=>`<div>${esc(v)}<div class="fl">${flag(wi,v,d.id)}</div></div>`).join(""):'<span class="mu">—</span>'}
+function cell(wi,d,w){if(d.id=="lim")return tpick(wi,d.id,String(w.a.lim||""));const vs=String(w.a[d.id]||"").split(" / ");let s="";for(let k=0;k<(d.g==2?2:1);k++)s+=pick(wi,d.id,k,vs[k]||"");return s}
+function selChange(i){const wi=+i.dataset.w,d=i.dataset.d,w=S.weeks[wi],old=w.a[d];const vs=[...m.querySelectorAll(`select[data-w="${wi}"][data-d="${d}"]`)].map(s=>s.value).filter(Boolean);vs.length?w.a[d]=vs.join(" / "):delete w.a[d];save();const row=document.getElementById(`r${wi}_${d}`);row.querySelectorAll(".warn").forEach(x=>x.remove());const nm=i.value;
+if(d=="lim"){const e=document.getElementById("tm"+wi);e&&(e.innerHTML=tmem(nm));return}
+if(d=="pres"&&nm&&wdefs(w).some(x=>x.id=="gem")){const gd=wdefs(w).find(x=>x.id=="gem"),setg=()=>{w.a.gem=nm;save();const gs=m.querySelector(`select[data-w="${wi}"][data-d="gem"]`);if(gs)gs.value=nm;refl()};if(!old&&!w.a.gem)setg();else if(w.a.gem!=nm){const x=document.createElement("div");x.className="warn y";x.innerHTML=`¿Asignar a este hermano a ${esc(gd.name)}?<br><button class="btn" data-ok>Sí</button><button class="btn" data-no>No</button>`;row.appendChild(x);x.querySelector("[data-ok]").onclick=()=>{x.remove();setg()};x.querySelector("[data-no]").onclick=()=>x.remove()}}
+refl();
+if(nm){const ms=[],di=dupi(wi,nm);if(di.dup)ms.push("Este hermano ya tiene una asignacion durante esta reunión"+(di.pr.length?" (se trata de "+di.pr.join(" y ")+")":"")+", desea continuar?");if(streak(wi,nm)&&d!="orI"&&d!="orF")ms.push("Este hermano ha sido asignado durante tres semanas seguidas, desea continuar?");
+ms.forEach(t=>{const x=document.createElement("div");x.className="warn";x.innerHTML=t+' <br><button class="btn" data-ok>Continuar</button><button class="btn dg" data-no>Quitar</button>';row.appendChild(x);x.querySelector("[data-ok]").onclick=()=>x.remove();x.querySelector("[data-no]").onclick=()=>{i.value="";i.onchange()}});row.querySelectorAll(".warn").forEach(x=>{if(di.y&&x.textContent.includes("ya tiene"))x.classList.add("y")})}}
+function viewW(){BK={n:[],f:[],p:[]};NX=nextW();
+let h=`<div class="bar"><button class="btn pri" id="addw">+ Agregar semana</button></div>`;
+S.weeks.forEach((w,wi)=>{if(!AUTH&&w.date=="Nueva semana"&&!Object.keys(w.a).length)return;const hh=h;h="";const ed=EDIT.has(w.id),ds=wdefs(w),fl=ds.filter(d=>w.a[d.id]).length;
+h+=`<details class="wk${w.id==NX?" nx":""}" data-id="${w.id}" ${OPEN.has(w.id)||ed?"open":""}><summary><span>${w.id==NX?"Próxima reunión · ":""}${esc(w.date)}</span><small>${fl}/${ds.length}</small></summary><div class="body"><div class="bar">${ed?`<button class="btn pri" data-sv="${wi}">Guardar</button><button class="btn" data-ca="${wi}">Cancelar</button>`:`<button class="btn blu" data-ed="${wi}">Editar</button>`}</div>${ed?`<div class="bar"><input type="date" style="max-width:180px" data-wd="${wi}" value="${iso(w.date)}">${wi?`<button class="btn" data-cp="${wi}">Copiar semana anterior</button>`:""}</div><div class="mu">Las listas se ordenan por quién lleva más tiempo sin asignación.</div>`:""}`;
+G.forEach((g,gi)=>{const gs=ds.filter(d=>d.g==gi);if(!gs.length)return;h+=`<div class="grp" style="background:${GC[gi]}">${esc(g)}</div>`;
+gs.forEach(d=>{h+=`<div class="row" id="r${wi}_${d.id}">`+(ed?`<div class="ed"><input data-wn="${wi}|${d.id}" value="${esc(d.name)}"><input type="number" min="0" data-wu="${wi}|${d.id}" value="${d.dur}"><button class="btn dg" data-wx="${wi}|${d.id}" title="Quitar de esta semana">×</button></div>`:`<label>${esc(d.name)}${dur(d)}</label>`)+`<div>${ed?cell(wi,d,w):show(wi,d,w)}</div></div>`})});
+if(ed)h+=`<div class="grp">Solo esta semana</div><div class="def"><input id="xn${wi}" placeholder="Nueva asignación"><input id="xu${wi}" type="number" min="0" value="5"><div class="act"><select id="xg${wi}">${G.map((g,gi)=>`<option value="${gi}" ${gi==2?"selected":""}>${esc(g)}</option>`).join("")}</select><button class="btn pri" data-xa="${wi}">+ Agregar</button></div></div>`+((w.hid||[]).length?`<div class="mu">Quitadas: ${w.hid.map(id=>{const x=S.defs.find(y=>y.id==id);return x?`<button class="btn" data-xr="${wi}|${id}">↺ ${esc(x.name)}</button>`:""}).join(" ")}</div>`:"")+`<div class="bar"><button class="btn dg" data-delw="${wi}">Eliminar semana</button></div>`;
+if(!ed)h+=shr(wi);h+=`</div></details>`;BK[wcls(w)].push({h:h,ed:ed});h=hh});h+=assem();
+m.innerHTML=h;
+const q=(s,f)=>m.querySelectorAll(s).forEach(f),sp=s=>s.split("|");
+q("details.wk,details.gw",d=>d.ontoggle=()=>{d.open?OPEN.add(d.dataset.id):OPEN.delete(d.dataset.id)});
+q("select[data-d]",i=>i.onchange=()=>selChange(i));
+q("[data-ed]",b=>b.onclick=()=>{const w=S.weeks[b.dataset.ed];SNAP[w.id]=JSON.stringify(w);EDIT.add(w.id);OPEN.add(w.id);render()});
+q("[data-ca]",b=>b.onclick=()=>{const wi=+b.dataset.ca,w=S.weeks[wi];S.weeks[wi]=JSON.parse(SNAP[w.id]);EDIT.delete(w.id);save();render()});
+q("[data-sv]",b=>b.onclick=()=>{const w=S.weeks[b.dataset.sv],e=empt(w),fin=()=>{EDIT.delete(w.id);save();render()};if(!e.length)return fin();b.closest(".body").querySelectorAll(".wsv").forEach(x=>x.remove());const x=document.createElement("div");x.className="warn wsv";x.innerHTML='Hay asignaciones sin hermano seleccionado, desea continuar?<div class="hist">Sin asignar: '+e.map(d=>esc(d.name)).join(", ")+'</div><button class="btn" data-ok>Continuar</button><button class="btn" data-no>Volver</button>';b.parentElement.after(x);x.querySelector("[data-ok]").onclick=fin;x.querySelector("[data-no]").onclick=()=>x.remove()});
+q("[data-wn]",i=>i.onchange=()=>{const[wi,id]=sp(i.dataset.wn),w=S.weeks[wi],ex=(w.ex||[]).find(x=>x.id==id);if(ex)ex.name=i.value;else{w.ov=w.ov||{};w.ov[id]=Object.assign(w.ov[id]||{},{name:i.value})}save()});
+q("[data-wu]",i=>i.onchange=()=>{const[wi,id]=sp(i.dataset.wu),w=S.weeks[wi],ex=(w.ex||[]).find(x=>x.id==id);if(ex)ex.dur=+i.value||0;else{w.ov=w.ov||{};w.ov[id]=Object.assign(w.ov[id]||{},{dur:+i.value||0})}save()});
+q("[data-wx]",b=>b.onclick=()=>{const[wi,id]=sp(b.dataset.wx),w=S.weeks[wi];if((w.ex||[]).some(x=>x.id==id))w.ex=w.ex.filter(x=>x.id!=id);else(w.hid=w.hid||[]).push(id);delete w.a[id];save();render()});
+q("[data-xr]",b=>b.onclick=()=>{const[wi,id]=sp(b.dataset.xr),w=S.weeks[wi];w.hid=w.hid.filter(x=>x!=id);save();render()});
+q("[data-xa]",b=>{b.onclick=()=>{const wi=+b.dataset.xa,w=S.weeks[wi],n=document.getElementById("xn"+wi).value.trim();if(!n)return;(w.ex=w.ex||[]).push({id:uid(),name:n,dur:+document.getElementById("xu"+wi).value||0,g:+document.getElementById("xg"+wi).value});save();render()}});
+q("[data-sh]",b=>b.onclick=()=>{const wi=+b.dataset.sw,t=b.dataset.sh;t=="pdf"?sharePdf(wi):t=="img"?shareImg(wi):t=="xls"?shareXls(wi):waPanel(b,wi)});
+q("[data-cp]",b=>b.onclick=()=>{const wi=+b.dataset.cp,w=S.weeks[wi],pw=S.weeks[wi-1];if(!pw)return;const go=()=>{wdefs(w).forEach(d=>{if(d.id=="lim")return;pw.a[d.id]?w.a[d.id]=pw.a[d.id]:delete w.a[d.id]});save();render()};if(empt(w).length==wdefs(w).filter(d=>d.id!="lim").length)return go();ask(b,"Esta semana ya tiene hermanos asignados, se reemplazarán. ¿Continuar?",go)});
+q("[data-wd]",i=>i.onchange=()=>{if(!i.value)return;const[y,mo,d]=i.value.split("-").map(Number);S.weeks[i.dataset.wd].date=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][mo-1]+" "+d+" "+y;save();render()});
+q("[data-delw]",b=>b.onclick=()=>{const w=S.weeks[b.dataset.delw],go=()=>{S.weeks.splice(b.dataset.delw,1);save();render()};if(!Object.entries(w.a).some(([k,v])=>k!="lim"&&String(v).trim()))return go();ask(b,"Ya tiene hermanos asignados a esta semana, desea continuar?",go)});
+document.getElementById("addw").onclick=()=>{const w={id:uid(),date:nd(),a:{}};S.weeks.push(w);SNAP[w.id]=JSON.stringify(w);EDIT.add(w.id);OPEN.add(w.id);save();render();const e=document.querySelector(`details[data-id="${w.id}"]`);e&&e.scrollIntoView({behavior:"smooth",block:"center"})};
+}
+const PH="14976c77f73797f4e39a1a5f181fca572cffb57c21dba712bcfa211d4637784c";
+async function sha(s){const b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(s));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join("")}
+function buildNav(){nav.innerHTML=(AUTH?'<div class="usr">Admin</div>':"")+[["w","Semanas"]].concat(AUTH?[["e","Personas"],["t","Equipos de limpieza"],["d","Definiciones"],["x","Exportar a Excel"],["j","Descargar datos.json"+(dirty()?" ●":"")]]:[["v","Personas"]]).concat([["l",AUTH?"Cerrar sesión":"Login"]]).map(([t,l])=>`<button data-t="${t}" class="${t==tab?"on":""} ${t=="l"&&AUTH?"ses":""}">${l}</button>`).join("");nav.querySelectorAll("button[data-t]").forEach(b=>b.onclick=()=>{nav.classList.remove("open");if(b.dataset.t=="x")return exportXlsx();if(b.dataset.t=="j")return pubData();if(b.dataset.t=="l"&&AUTH){AUTH=false;try{sessionStorage.removeItem("vym_auth")}catch(e){}setS();tab="w";return render()}tab=b.dataset.t;render();scrollTo(0,0)})}
+function viewL(){
+if(AUTH){m.innerHTML=`<div class="pc"><p>Sesión iniciada como <b>admin</b>.</p><button class="btn" id="lo">Cerrar sesión</button></div>`;document.getElementById("lo").onclick=()=>{AUTH=false;try{sessionStorage.removeItem("vym_auth")}catch(e){}setS();tab="w";render()};return}
+m.innerHTML=`<div class="pc"><p class="mu">Solo el administrador puede editar y ver las demás pestañas.</p><div class="g2"><input id="lu" placeholder="Usuario" autocomplete="username"><input id="lp" type="password" placeholder="Contraseña" autocomplete="current-password"></div><button class="btn pri" id="li">Ingresar</button><div class="fl" id="le"></div></div>`;
+const go=async()=>{const u=document.getElementById("lu").value.trim(),p=document.getElementById("lp").value;let ok=false;try{ok=u=="admin"&&await sha(p)==PH}catch(e){}if(ok){AUTH=true;try{sessionStorage.setItem("vym_auth","1")}catch(e){}setS();tab="w";render()}else document.getElementById("le").textContent="Usuario o contraseña incorrectos."};
+document.getElementById("li").onclick=go;document.getElementById("lp").onkeydown=e=>{if(e.key=="Enter")go()}}
+async function exportXlsx(){
+if(!AUTH)return;
+try{
+if(!window.ExcelJS)throw{message:"No se pudo cargar la librería de Excel."};
+const dl=await dlc();
+const wb=new ExcelJS.Workbook(),W=S.weeks,nc=W.length+1,hex=h=>({type:"pattern",pattern:"solid",fgColor:{argb:"FF"+h}}),bd={style:"thin",color:{argb:"FFBBBBBB"}},bo={top:bd,left:bd,bottom:bd,right:bd};
+const head=r=>r.eachCell(c=>{c.fill=hex("6B7178");c.font={bold:true,color:{argb:"FFFFFFFF"}};c.alignment={horizontal:"center",vertical:"middle",wrapText:true};c.border=bo});
+const ws=wb.addWorksheet("Reunión vida y ministerio",{views:[{state:"frozen",xSplit:1,ySplit:1}]});
+ws.getColumn(1).width=38;for(let c=2;c<=nc;c++)ws.getColumn(c).width=26;
+head(ws.addRow(["Reunión vida y ministerio",...W.map(w=>w.date)]));
+const put=(label,vals)=>{const r=ws.addRow([label,...vals]);r.eachCell((c,i)=>{c.border=bo;c.alignment={vertical:"top",wrapText:true,horizontal:i==1?"left":"center"};if(i==1)c.font={bold:true}});return r};
+const nm=(v)=>String(v||"").split(" / ").join("\n"),lab=x=>x.name+(x.dur?` (${x.dur} min.)`:"");
+G.forEach((g,gi)=>{
+const defs=S.defs.filter(d=>d.g==gi),exs=[];W.forEach((w,wi)=>(w.ex||[]).filter(x=>x.g==gi).forEach(x=>exs.push([x,wi])));
+if(!defs.length&&!exs.length)return;
+const sr=ws.addRow([g.toUpperCase()]);ws.mergeCells(sr.number,1,sr.number,nc);const c0=sr.getCell(1);c0.fill=hex(GC[gi].slice(1));c0.font={bold:true,color:{argb:"FFFFFFFF"}};c0.alignment={horizontal:"left",vertical:"middle"};
+defs.forEach(d=>{
+put(lab(d),W.map(w=>{if((w.hid||[]).includes(d.id))return"—";const o=(w.ov||{})[d.id],v=d.id=="lim"?((S.teams.find(t=>t.id==w.a.lim)||{}).name||""):nm(w.a[d.id]);return o&&o.name&&o.name!=d.name?o.name+": "+v:v}));
+if(d.id=="lim"){const ms=W.map(w=>w.a.lim?S.people.filter(p=>p.team==w.a.lim).map(p=>p.name):[]),n=Math.max(0,...ms.map(a=>a.length));for(let k=0;k<n;k++)put(k?"":"Integrantes",ms.map(a=>a[k]||""))}
+});
+exs.forEach(([x,wi])=>put(lab(x),W.map((w,j)=>j==wi?nm(w.a[x.id]):"")));
+});
+const ps=wb.addWorksheet("Personas");ps.columns=[{width:30},{width:12},{width:20},{width:18},{width:20}];
+head(ps.addRow(["Nombre","Tipo","Categoría","Teléfono","Equipo de limpieza"]));
+S.people.forEach(p=>ps.addRow([p.name,p.tipo=="hermana"?"Hermana":"Hermano",p.tipo=="hermana"?"":p.cat||"",p.tel||"",(S.teams.find(t=>t.id==p.team)||{}).name||""]));
+const ts=wb.addWorksheet("Equipos de limpieza");S.teams.forEach((t,i)=>ts.getColumn(i+1).width=28);
+head(ts.addRow(S.teams.map(t=>t.name)));
+const tm=S.teams.map(t=>S.people.filter(p=>p.team==t.id).map(p=>p.name));
+for(let k=0;k<Math.max(0,...tm.map(a=>a.length));k++)ts.addRow(tm.map(a=>a[k]||""));
+const ds=wb.addWorksheet("Definiciones");ds.columns=[{width:42},{width:16},{width:30}];
+head(ds.addRow(["Asignación","Duración (min.)","Sección"]));
+S.defs.forEach(d=>ds.addRow([d.name,d.dur||"",G[d.g]]));
+const buf=await wb.xlsx.writeBuffer();
+await dl.save({filename:"reunion-vida-y-ministerio.xlsx",data:buf});
+}catch(e){if(e&&e.code=="declined")return;alert("No se pudo exportar: "+((e&&e.message)||"error"))}
+}
+function pd(s){const MO={jan:0,feb:1,mar:2,apr:3,may:4,jun:5,jul:6,aug:7,sep:8,oct:9,nov:10,dec:11,ene:0,abr:3,ago:7,dic:11};s=String(s).toLowerCase();let m;
+if(m=s.match(/(\d{4})-(\d{1,2})-(\d{1,2})/))return new Date(+m[1],m[2]-1,+m[3]);
+if(m=s.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/))return new Date(+m[3],m[2]-1,+m[1]);
+if(m=s.match(/([a-z]{3})[a-z]*\.?\s+(\d{1,2})\D+(\d{4})/))return MO[m[1]]!=null?new Date(+m[3],MO[m[1]],+m[2]):null;
+if(m=s.match(/(\d{1,2})\s+(?:de\s+)?([a-z]{3})[a-z]*\D+(\d{4})/))return MO[m[2]]!=null?new Date(+m[3],MO[m[2]],+m[1]):null;
+return null}
+function today0(){const t=new Date();return new Date(t.getFullYear(),t.getMonth(),t.getDate())}
+function nextW(){const t=today0();let b=null,bd=null;S.weeks.forEach(w=>{const d=pd(w.date);if(d&&d>=t&&(!bd||d<bd)){b=w.id;bd=d}});return b}
+function wcls(w){const d=pd(w.date);return w.id==NX?"n":d&&d<today0()?"p":"f"}
+function assem(){const gp=(id,t,a)=>a.length?`<details class="gw" data-id="${id}" ${OPEN.has(id)||a.some(x=>x.ed)?"open":""}><summary>${t} <small>(${a.length})</small></summary>${a.map(x=>x.h).join("")}</details>`:"";return(BK.n.length?BK.n.map(x=>x.h).join(""):'<p class="mu">No hay próximas reuniones cargadas.</p>')+gp("g_f","Próximas semanas",BK.f)+gp("g_p","Semanas anteriores",BK.p)}
+function ask(btn,msg,fn){const bar=btn.closest(".bar")||btn.parentElement;document.querySelectorAll(".askw").forEach(x=>x.remove());const x=document.createElement("div");x.className="warn askw";x.innerHTML=msg+'<br><button class="btn dg" data-ok>Continuar</button><button class="btn" data-no>Cancelar</button>';bar.after(x);x.querySelector("[data-ok]").onclick=fn;x.querySelector("[data-no]").onclick=()=>x.remove()}
+function nd(){let b=null;S.weeks.forEach(w=>{const d=pd(w.date);if(d&&(!b||d>b))b=d});const d=b?new Date(b.getFullYear(),b.getMonth(),b.getDate()+7):today0();return["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][d.getMonth()]+" "+d.getDate()+" "+d.getFullYear()}
+function iso(s){const d=pd(s);return d?d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"):""}
+const slug=s=>String(s).replace(/\W+/g,"-");
+function lay(wi){const w=S.weeks[wi],o=[];G.forEach((g,gi)=>{const gs=wdefs(w).filter(d=>d.g==gi);if(!gs.length)return;o.push({h:g,c:GC[gi]});gs.forEach(d=>{let v;if(d.id=="lim"){const t=S.teams.find(t=>t.id==w.a.lim);v=t?[t.name,...S.people.filter(p=>p.team==t.id).map(p=>p.name)]:[]}else v=String(w.a[d.id]||"").split(" / ").filter(Boolean);o.push({l:d.name+(d.dur?` (${d.dur} min.)`:""),v:v.length?v:["—"]})})});return o}
+async function dlc(){return{save:async({filename:f,data})=>{const mt={pdf:"application/pdf",png:"image/png",json:"application/json",xlsx:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"}[f.split(".").pop()]||"application/octet-stream",b=data instanceof Blob?data:new Blob([data],{type:mt}),u=URL.createObjectURL(b),a=document.createElement("a");a.href=u;a.download=f;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),4000)}}}
+async function shareImg(wi){const dl=await dlc();if(!dl)return;const w=S.weeks[wi],L=lay(wi),W=900,P=24,hh=r=>r.h?30:14+20*r.v.length;const cv=document.createElement("canvas");cv.width=W;cv.height=P*2+40+L.reduce((a,r)=>a+hh(r),0);const x=cv.getContext("2d");x.fillStyle="#fff";x.fillRect(0,0,W,cv.height);x.fillStyle="#222";x.font="bold 22px sans-serif";x.fillText("Reunión vida y ministerio · "+w.date,P,P+22);let y=P+40;L.forEach(r=>{if(r.h){x.fillStyle=r.c;x.fillRect(P,y,W-2*P,26);x.fillStyle="#fff";x.font="bold 14px sans-serif";x.fillText(r.h.toUpperCase(),P+10,y+18)}else{x.fillStyle="#222";x.font="bold 15px sans-serif";x.fillText(r.l,P+6,y+22);x.font="15px sans-serif";r.v.forEach((t,i)=>x.fillText(t,P+380,y+22+i*20));x.fillStyle="#ddd";x.fillRect(P,y+hh(r)-1,W-2*P,1)}y+=hh(r)});cv.toBlob(b=>dl.save({filename:"semana-"+slug(w.date)+".png",data:b}).catch(e=>{if(!e||e.code!="declined")alert("No se pudo guardar la imagen.")}),"image/png")}
+async function sharePdf(wi){if(!window.jspdf)return alert("No se pudo cargar la librería de PDF.");const dl=await dlc();if(!dl)return;const w=S.weeks[wi],d=new window.jspdf.jsPDF({unit:"pt",format:"a4"});let y=50;d.setFont("helvetica","bold");d.setFontSize(16);d.setTextColor(30,30,30);d.text("Reunión vida y ministerio · "+w.date,40,y);y+=26;lay(wi).forEach(r=>{const hh=r.h?24:10+13*r.v.length;if(y+hh>800){d.addPage();y=50}if(r.h){const c=parseInt(r.c.slice(1),16);d.setFillColor(c>>16,(c>>8)&255,c&255);d.rect(40,y,515,18,"F");d.setTextColor(255,255,255);d.setFontSize(10);d.setFont("helvetica","bold");d.text(r.h.toUpperCase(),46,y+13)}else{d.setTextColor(30,30,30);d.setFontSize(10);d.setFont("helvetica","bold");d.text(r.l,46,y+10);d.setFont("helvetica","normal");r.v.forEach((t,i)=>d.text(t,290,y+10+i*13))}y+=hh});try{await dl.save({filename:"semana-"+slug(w.date)+".pdf",data:d.output("arraybuffer")})}catch(e){if(!e||e.code!="declined")alert("No se pudo guardar el PDF.")}}
+function wph(t){let d=String(t||"").replace(/\D/g,"");if(d.startsWith("00"))d=d.slice(2);else if(d.startsWith("0"))d="598"+d.slice(1);else if(d.length<=8)d="598"+d;return d.length>=10?d:""}
+function waPanel(btn,wi){const bar=btn.closest(".bar"),body=bar.parentElement,old=body.querySelector(".wa");if(old){old.remove();return}
+const w=S.weeks[wi],by={};wdefs(w).forEach(d=>{if(d.id=="lim")return;const ns=String(w.a[d.id]||"").split(" / ").filter(Boolean);ns.forEach((n,k)=>{(by[n]=by[n]||[]).push(d.name+(ns.length>1?" (con "+ns.filter((_,j)=>j!=k).join(" y ")+")":"")+(d.dur?` (${d.dur} min.)`:""))})});
+const t=S.teams.find(t=>t.id==w.a.lim);if(t)S.people.filter(p=>p.team==t.id).forEach(p=>(by[p.name]=by[p.name]||[]).push("Limpieza ("+t.name+")"));
+const x=document.createElement("div");x.className="pc wa";const ks=Object.keys(by).sort();
+x.innerHTML=ks.length?ks.map(n=>{const p=S.people.find(p=>p.name==n),ph=wph(p&&p.tel),f=n.includes(", ")?n.split(", ")[1]:n,msg=`Hola ${f}! Tienes asignación en la reunión Vida y Ministerio del ${w.date}: ${by[n].join("; ")}.`;return `<div class="row" style="grid-template-columns:1fr auto"><div><b>${esc(n)}</b><div class="mu">${esc(by[n].join(" · "))}</div></div>${ph?`<a class="btn" target="_blank" rel="noopener" href="https://wa.me/${ph}?text=${encodeURIComponent(msg)}">Enviar</a>`:'<span class="mu">Sin teléfono</span>'}</div>`}).join(""):'<p class="mu">No hay asignaciones cargadas.</p>';body.insertBefore(x,bar.nextSibling)}
+function shr(wi){return `<div class="shr"><div class="stl">Enviar notificación</div><div class="bar"><button class="btn wag" data-sh="wa" data-sw="${wi}">WhatsApp</button></div><div class="stl">Exportar semana</div><div class="bar"><button class="btn" data-sh="pdf" data-sw="${wi}">PDF</button><button class="btn" data-sh="img" data-sw="${wi}">Imagen</button><button class="btn" data-sh="xls" data-sw="${wi}">Excel</button></div></div>`}
+async function shareXls(wi){if(!window.ExcelJS)return alert("No se pudo cargar la librería de Excel.");const dl=await dlc();if(!dl)return;const w=S.weeks[wi],wb=new ExcelJS.Workbook(),ws=wb.addWorksheet("Semana");ws.columns=[{width:44},{width:40}];const bd={style:"thin",color:{argb:"FFBBBBBB"}},bo={top:bd,left:bd,bottom:bd,right:bd},t=ws.addRow(["Reunión vida y ministerio · "+w.date]);ws.mergeCells(t.number,1,t.number,2);t.getCell(1).font={bold:true,size:14};
+lay(wi).forEach(r=>{if(r.h){const x=ws.addRow([r.h.toUpperCase()]);ws.mergeCells(x.number,1,x.number,2);const c=x.getCell(1);c.fill={type:"pattern",pattern:"solid",fgColor:{argb:"FF"+r.c.slice(1)}};c.font={bold:true,color:{argb:"FFFFFFFF"}}}else{const x=ws.addRow([r.l,r.v.join("\n")]);x.eachCell((c,i)=>{c.border=bo;c.alignment={vertical:"top",wrapText:true};if(i==1)c.font={bold:true}})}});
+try{await dl.save({filename:"semana-"+slug(w.date)+".xlsx",data:await wb.xlsx.writeBuffer()})}catch(e){if(!e||e.code!="declined")alert("No se pudo guardar el Excel.")}}
+const PV={q:"",sel:null,tab:"n"};
+function pasg(n){const o=[],t0=today0(),p=S.people.find(x=>x.name==n);S.weeks.forEach(w=>{const d=pd(w.date),past=!!d&&d<t0,t=d?d.getTime():9e15;wdefs(w).forEach(df=>{if(df.id=="lim")return;const ns=String(w.a[df.id]||"").split(" / ").filter(Boolean);if(ns.includes(n)){const oth=ns.filter(x=>x!=n);o.push({date:w.date,t,past,part:df.name+(oth.length?" (con "+oth.join(" y ")+")":"")})}});const tm=p&&p.team&&w.a.lim==p.team?S.teams.find(x=>x.id==p.team):null;if(tm)o.push({date:w.date,t,past,part:"Limpieza ("+tm.name+")"})});return o}
+function pdet(p){const t=S.teams.find(t=>t.id==p.team),a=PV.tab=="a",it=pasg(p.name).filter(x=>a?x.past:!x.past).sort((x,y)=>a?y.t-x.t:x.t-y.t);const g=[];it.forEach(x=>{const l=g[g.length-1];if(l&&l.date==x.date&&l.t==x.t)l.parts.push(x.part);else g.push({date:x.date,t:x.t,parts:[x.part]})});
+return `<div class="pc"><b>${esc(p.name)}</b> ${badge(p)}<div class="mu" style="margin:6px 0">Equipo de limpieza: <b>${t?esc(t.name):"Sin equipo"}</b></div><div class="bar"><button class="btn${a?"":" blu"}" data-vt="n">Próximas asignaciones</button><button class="btn${a?" blu":""}" data-vt="a">Asignaciones anteriores</button></div>${g.length?g.map(x=>`<div class="row"><b>${esc(x.date)}</b><div>${x.parts.map(esc).join("<br>")}</div></div>`).join(""):'<p class="mu">No hay asignaciones.</p>'}</div>`}
+function viewV(){m.innerHTML=`<input id="vq" placeholder="Buscar por nombre…" value="${esc(PV.q)}" autocomplete="off"><div id="vr" style="margin-top:8px"></div>`;
+const qi=document.getElementById("vq"),r=document.getElementById("vr");
+const draw=()=>{const k=nrm(PV.q.trim());let h="";if(!k){h='<p class="mu">Escribe un nombre para buscar.</p>';PV.sel=null}else{const ms=S.people.filter(p=>nrm(p.name).includes(k)).sort((a,b)=>a.name.localeCompare(b.name)).slice(0,30);h=ms.length?ms.map(p=>`<button class="btn pr${PV.sel==p.id?" on":""}" data-v="${p.id}">${esc(p.name)}</button>`).join(""):'<p class="mu">Sin resultados.</p>';const p=S.people.find(x=>x.id==PV.sel);if(p&&ms.some(x=>x.id==p.id))h+=pdet(p)}
+r.innerHTML=h;r.querySelectorAll("[data-v]").forEach(b=>b.onclick=()=>{PV.sel=b.dataset.v;PV.tab="n";draw()});r.querySelectorAll("[data-vt]").forEach(b=>b.onclick=()=>{PV.tab=b.dataset.vt;draw()})};
+qi.oninput=()=>{PV.q=qi.value;draw()};draw()}
+function viewD(){
+let h=`<p class="mu">Edita nombres y duración, cambia el grupo, reordena, o agrega y elimina asignaciones. Los cambios se aplican a todas las semanas.</p>`;
+S.defs.forEach((d,i)=>{h+=`<div class="def"><input data-n="${i}" value="${esc(d.name)}"><input type="number" min="0" data-u="${i}" value="${d.dur}" title="Minutos">
+<div class="act"><select data-g="${i}">${G.map((g,gi)=>`<option value="${gi}" ${d.g==gi?"selected":""}>${esc(g)}</option>`).join("")}</select>
+<label class="chk"><input type="checkbox" data-f="${i}" ${d.fem?"checked":""}>Permite hermanas</label><select data-r="${i}"><option value="">Cualquier categoría</option><option value="SM" ${d.req=="SM"?"selected":""}>Siervo Ministerial o Anciano</option><option value="AN" ${d.req=="AN"?"selected":""}>Solo Anciano</option></select>
+<button class="btn" data-up="${i}">↑</button><button class="btn" data-dn="${i}">↓</button><button class="btn dg" data-del="${i}">Eliminar</button></div></div>`});
+h+=`<div class="bar"><button class="btn pri" id="addd">+ Agregar asignación</button><button class="btn" id="exp">Exportar copia</button><button class="btn" id="imp">Importar copia</button><button class="btn dg" id="rst">Restablecer</button></div><input type="file" id="fi" accept=".json" hidden>`;
+m.innerHTML=h;
+const q=(s,f)=>m.querySelectorAll(s).forEach(f);
+q("[data-n]",i=>i.onchange=()=>{S.defs[i.dataset.n].name=i.value;save()});
+q("[data-u]",i=>i.onchange=()=>{S.defs[i.dataset.u].dur=+i.value||0;save()});
+q("[data-g]",i=>i.onchange=()=>{S.defs[i.dataset.g].g=+i.value;save()});
+q("[data-f]",i=>i.onchange=()=>{S.defs[i.dataset.f].fem=i.checked;save()});
+q("[data-r]",i=>i.onchange=()=>{S.defs[i.dataset.r].req=i.value;save()});
+const mv=(i,k)=>{const j=i+k;if(j<0||j>=S.defs.length)return;[S.defs[i],S.defs[j]]=[S.defs[j],S.defs[i]];save();render()};
+q("[data-up]",b=>b.onclick=()=>mv(+b.dataset.up,-1));q("[data-dn]",b=>b.onclick=()=>mv(+b.dataset.dn,1));
+q("[data-del]",b=>b.onclick=()=>{const d=S.defs[b.dataset.del];ask(b,`¿Eliminar "${esc(d.name)}"? Se perderán sus asignaciones.`,()=>{S.weeks.forEach(w=>delete w.a[d.id]);S.defs.splice(b.dataset.del,1);save();render()})});
+document.getElementById("addd").onclick=()=>{S.defs.push({id:uid(),name:"Nueva asignación",dur:5,g:2,fem:false,req:""});save();render()};
+document.getElementById("exp").onclick=()=>{const a=document.createElement("a");a.href="data:application/json;charset=utf-8,"+encodeURIComponent(JSON.stringify(S));a.download="asignaciones.json";a.click()};
+const fi=document.getElementById("fi");document.getElementById("imp").onclick=()=>fi.click();
+fi.onchange=()=>{const r=new FileReader();r.onload=()=>{try{const o=JSON.parse(r.result);if(o.defs&&o.weeks){S=o;save();render()}else alert("Archivo no válido")}catch(e){alert("Archivo no válido")}};r.readAsText(fi.files[0])};
+document.getElementById("rst").onclick=e=>ask(e.currentTarget,"¿Volver a los datos publicados? Se pierden los cambios sin publicar (los teléfonos se conservan).",()=>{const t={};S.people.forEach(p=>t[p.name]=p.tel);S=clone(PUB||seed());S.people.forEach(p=>{if(t[p.name])p.tel=t[p.name]});save();render()});
+}
+function render(){mig();updU();if(!AUTH&&["e","t","d"].includes(tab))tab="w";if(AUTH&&tab=="v")tab="w";document.body.classList.toggle("ro",!AUTH);buildNav();({w:viewW,e:viewE,t:viewT,d:viewD,l:viewL,v:viewV})[tab]()}
+const nav=document.getElementById("nav");document.getElementById("bg").onclick=()=>nav.classList.toggle("open");document.getElementById("un").onclick=undo;
+
+(async()=>{m.innerHTML='<p class="mu">Cargando…</p>';try{const r=await fetch("datos.json?v="+Date.now(),{cache:"no-store"});if(r.ok){const o=await r.json();if(o&&o.defs&&o.weeks)S=o}}catch(e){}const a=AUTH;AUTH=false;mig();AUTH=a;PUB=S;PUBJ=JSON.stringify(PUB,REP);setS();OPEN.clear();const nw=nextW();if(nw)OPEN.add(nw);render()})();
+</script></body></html>
