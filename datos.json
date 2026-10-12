@@ -1,0 +1,550 @@
+{
+ "defs": [
+  {
+   "id": "sv",
+   "name": "Sonido y video",
+   "dur": 0,
+   "g": 0,
+   "fem": false,
+   "req": ""
+  },
+  {
+   "id": "mic",
+   "name": "Micrófonos / acomodadores",
+   "dur": 0,
+   "g": 0,
+   "fem": false,
+   "req": ""
+  },
+  {
+   "id": "pres",
+   "name": "Presidente",
+   "dur": 0,
+   "g": 0,
+   "fem": false,
+   "req": ""
+  },
+  {
+   "id": "orI",
+   "name": "Oración inicial",
+   "dur": 0,
+   "g": 0,
+   "fem": false,
+   "req": ""
+  },
+  {
+   "id": "tes",
+   "name": "Tesoros de la Biblia",
+   "dur": 10,
+   "g": 1,
+   "fem": false,
+   "req": ""
+  },
+  {
+   "id": "gem",
+   "name": "Busquemos perlas escondidas",
+   "dur": 10,
+   "g": 1,
+   "fem": false,
+   "req": ""
+  },
+  {
+   "id": "lec",
+   "name": "Lectura de la Biblia",
+   "dur": 4,
+   "g": 1,
+   "fem": false,
+   "req": ""
+  },
+  {
+   "id": "m4",
+   "name": "4. Empiece conversaciones",
+   "dur": 3,
+   "g": 2,
+   "fem": true,
+   "req": ""
+  },
+  {
+   "id": "m5",
+   "name": "5. Haga revisitas",
+   "dur": 4,
+   "g": 2,
+   "fem": true,
+   "req": ""
+  },
+  {
+   "id": "m6",
+   "name": "6. Haga discípulos",
+   "dur": 5,
+   "g": 2,
+   "fem": false,
+   "req": ""
+  },
+  {
+   "id": "m7",
+   "name": "7. Discurso / otra parte",
+   "dur": 5,
+   "g": 2,
+   "fem": true,
+   "req": ""
+  },
+  {
+   "id": "v8",
+   "name": "8. Parte de Nuestra vida cristiana",
+   "dur": 15,
+   "g": 3,
+   "fem": false,
+   "req": ""
+  },
+  {
+   "id": "cbc",
+   "name": "Conductor del estudio bíblico",
+   "dur": 30,
+   "g": 3,
+   "fem": false,
+   "req": ""
+  },
+  {
+   "id": "cbl",
+   "name": "Lector del estudio bíblico",
+   "dur": 0,
+   "g": 3,
+   "fem": false,
+   "req": ""
+  },
+  {
+   "id": "orF",
+   "name": "Oración final",
+   "dur": 0,
+   "g": 4,
+   "fem": false,
+   "req": ""
+  },
+  {
+   "id": "lim",
+   "name": "Equipo de limpieza",
+   "dur": 0,
+   "g": 4,
+   "fem": false,
+   "req": ""
+  }
+ ],
+ "weeks": [
+  {
+   "id": "w0",
+   "date": "Oct 9 2026",
+   "a": {
+    "sv": "Fernández de León, Juan",
+    "mic": "Kotla Vijay",
+    "pres": "Del Signore, Bernardo",
+    "tes": "Del Signore, Lucas",
+    "lec": "Crai, Claudio",
+    "cbc": "Bernal, Ronald",
+    "cbl": "Astorino, Fabrizzio",
+    "orF": "Bernal, Ronald",
+    "lim": "tF",
+    "gem": "Del Signore, Bernardo"
+   }
+  },
+  {
+   "id": "w1",
+   "date": "Oct 16 2026",
+   "a": {
+    "sv": "Del Signore, Bernardo",
+    "mic": "Pintos, Michael",
+    "pres": "Fernández de León, Juan",
+    "tes": "Bernal, Ronald",
+    "lec": "Kotla Vijay",
+    "cbc": "Del Signore, Bernardo",
+    "cbl": "Robinson, Michael",
+    "orF": "Robinson, Michael",
+    "lim": "tG",
+    "gem": "Fernández de León, Juan"
+   }
+  },
+  {
+   "id": "w2",
+   "date": "Oct 23 2026",
+   "a": {
+    "sv": "Crai, Claudio",
+    "mic": "Pintos, Michael",
+    "pres": "Fernández de León, Juan",
+    "tes": "Cantu, William",
+    "lec": "Brignoni, Benjamín",
+    "cbc": "Del Signore, Lucas",
+    "cbl": "Pintos, Michael",
+    "orF": "Brignoni, Benjamín",
+    "lim": "tA",
+    "gem": "Fernández de León, Juan"
+   }
+  },
+  {
+   "id": "w3",
+   "date": "Oct 30 2026",
+   "a": {
+    "sv": "Del Signore, Lucas",
+    "mic": "Michelena, Federico",
+    "pres": "Bernal, Ronald",
+    "tes": "Fernández de León, Juan",
+    "lec": "Pintos, Michael",
+    "cbc": "Del Signore, Lucas",
+    "cbl": "Michelena, Federico",
+    "lim": "tB",
+    "gem": "Bernal, Ronald"
+   }
+  },
+  {
+   "id": "w4",
+   "date": "Nov 6 2026",
+   "a": {
+    "pres": "Del Signore, Lucas",
+    "tes": "Bernal, Ronald",
+    "lec": "Brignoni, Benjamín",
+    "cbc": "Cantu, William",
+    "cbl": "Brignoni, Benjamín",
+    "orF": "Cantu, William",
+    "lim": "tC",
+    "gem": "Del Signore, Lucas"
+   }
+  },
+  {
+   "id": "w5",
+   "date": "Nov 13 2026",
+   "a": {
+    "pres": "Cantu, William",
+    "tes": "Astorino, Fabrizzio",
+    "lec": "Robinson, Michael",
+    "cbc": "Bernal, Ronald",
+    "cbl": "Robinson, Michael",
+    "orF": "Bernal, Ronald",
+    "lim": "tD",
+    "gem": "Cantu, William"
+   }
+  },
+  {
+   "id": "w6",
+   "date": "Nov 20 2026",
+   "a": {
+    "pres": "Fernández de León, Juan",
+    "tes": "Cantu, William",
+    "lec": "Pintos, Michael",
+    "cbc": "Del Signore, Lucas",
+    "orF": "Del Signore, Lucas",
+    "lim": "tE",
+    "gem": "Fernández de León, Juan"
+   }
+  },
+  {
+   "id": "w7",
+   "date": "Nov 27 2026",
+   "a": {
+    "pres": "Del Signore, Bernardo",
+    "tes": "Del Signore, Lucas",
+    "lec": "Bernal, Ronald",
+    "cbc": "Fernández de León, Juan",
+    "cbl": "Bernal, Ronald",
+    "orF": "Fernández de León, Juan",
+    "lim": "tF",
+    "gem": "Del Signore, Bernardo"
+   }
+  },
+  {
+   "id": "w8",
+   "date": "Dec 4 2026",
+   "a": {
+    "pres": "Bernal, Ronald",
+    "tes": "Fernández de León, Juan",
+    "lec": "Crai, Claudio",
+    "cbc": "Del Signore, Bernardo",
+    "cbl": "Crai, Claudio",
+    "orF": "Del Signore, Bernardo",
+    "lim": "tG",
+    "gem": "Bernal, Ronald"
+   }
+  },
+  {
+   "id": "w9",
+   "date": "Dec 11 2026",
+   "a": {
+    "pres": "Del Signore, Lucas",
+    "tes": "Bernal, Ronald",
+    "lec": "Brignoni, Benjamín",
+    "cbc": "Cantu, William",
+    "cbl": "Brignoni, Benjamín",
+    "orF": "Cantu, William",
+    "lim": "tA",
+    "gem": "Del Signore, Lucas"
+   }
+  },
+  {
+   "id": "w10",
+   "date": "Dec 18 2026",
+   "a": {
+    "pres": "Cantu, William",
+    "tes": "Astorino, Fabrizzio",
+    "lec": "Michelena, Federico",
+    "cbc": "Bernal, Ronald",
+    "cbl": "Michelena, Federico",
+    "orF": "Bernal, Ronald",
+    "lim": "tB",
+    "gem": "Cantu, William"
+   }
+  },
+  {
+   "id": "w11",
+   "date": "Dec 25 2026",
+   "a": {
+    "pres": "Fernández de León, Juan",
+    "tes": "Cantu, William",
+    "lec": "Robinson, Michael",
+    "cbc": "Del Signore, Lucas",
+    "cbl": "Kotla Vijay",
+    "orF": "Del Signore, Lucas",
+    "lim": "tC",
+    "gem": "Fernández de León, Juan"
+   }
+  },
+  {
+   "id": "w12",
+   "date": "Jan 1 2027",
+   "a": {
+    "pres": "Del Signore, Bernardo",
+    "tes": "Del Signore, Lucas",
+    "lec": "Astorino, Fabrizzio",
+    "cbc": "Fernández de León, Juan",
+    "cbl": "Astorino, Fabrizzio",
+    "orF": "Fernández de León, Juan",
+    "lim": "tD",
+    "gem": "Del Signore, Bernardo"
+   }
+  }
+ ],
+ "people": [
+  {
+   "id": "d4rok4h",
+   "name": "Alwar, Bargavi",
+   "cat": "",
+   "tipo": "hermana",
+   "team": "tA"
+  },
+  {
+   "id": "drrcoxs",
+   "name": "Arena, Abigaíl",
+   "cat": "",
+   "tipo": "hermana",
+   "team": "tA"
+  },
+  {
+   "id": "dlihc6k",
+   "name": "Astorino, Fabrizzio",
+   "cat": "",
+   "tipo": "hermano",
+   "team": "tE"
+  },
+  {
+   "id": "db6y7ak",
+   "name": "Bernal, Ronald",
+   "cat": "",
+   "tipo": "hermano",
+   "team": "tG"
+  },
+  {
+   "id": "d4rxsx5",
+   "name": "Brignoni, Benjamín",
+   "cat": "",
+   "tipo": "hermano",
+   "team": "tB"
+  },
+  {
+   "id": "dzqz94k",
+   "name": "Cantu, William",
+   "cat": "",
+   "tipo": "hermano",
+   "team": ""
+  },
+  {
+   "id": "d62ya1f",
+   "name": "Crai, Claudio",
+   "cat": "",
+   "tipo": "hermano",
+   "team": "tA"
+  },
+  {
+   "id": "dw2whjs",
+   "name": "De Castellet, Ana",
+   "cat": "",
+   "tipo": "hermana",
+   "team": "tB"
+  },
+  {
+   "id": "dkdnsc3",
+   "name": "Debia, Karien",
+   "cat": "",
+   "tipo": "hermana",
+   "team": "tC"
+  },
+  {
+   "id": "dnvlbvg",
+   "name": "Del Signore, Avril",
+   "cat": "",
+   "tipo": "hermana",
+   "team": "tC"
+  },
+  {
+   "id": "dso9gif",
+   "name": "Del Signore, Bernardo",
+   "cat": "",
+   "tipo": "hermano",
+   "team": "tB"
+  },
+  {
+   "id": "dxt5nys",
+   "name": "Del Signore, Lucas",
+   "cat": "",
+   "tipo": "hermano",
+   "team": "tC"
+  },
+  {
+   "id": "dni6ccu",
+   "name": "Del Signore, Lucía",
+   "cat": "",
+   "tipo": "hermana",
+   "team": "tB"
+  },
+  {
+   "id": "d2f4dyk",
+   "name": "Díaz, Sofía",
+   "cat": "",
+   "tipo": "hermana",
+   "team": "tE"
+  },
+  {
+   "id": "ditog3l",
+   "name": "Farina, Elizabeth",
+   "cat": "",
+   "tipo": "hermana",
+   "team": "tF"
+  },
+  {
+   "id": "ddgzi4o",
+   "name": "Fernández de León, Juan",
+   "cat": "",
+   "tipo": "hermano",
+   "team": "tF"
+  },
+  {
+   "id": "dact4mt",
+   "name": "Ferraro, Florencia",
+   "cat": "",
+   "tipo": "hermana",
+   "team": "tD"
+  },
+  {
+   "id": "d2ykx91",
+   "name": "Ferreira, Débora",
+   "cat": "",
+   "tipo": "hermana",
+   "team": "tG"
+  },
+  {
+   "id": "dx4y9cg",
+   "name": "Kotla Vijay",
+   "cat": "",
+   "tipo": "hermano",
+   "team": ""
+  },
+  {
+   "id": "d8xepkp",
+   "name": "Llanes, Irína",
+   "cat": "",
+   "tipo": "hermana",
+   "team": "tA"
+  },
+  {
+   "id": "d24yrvi",
+   "name": "Martinez, Fiorella",
+   "cat": "",
+   "tipo": "hermana",
+   "team": "tF"
+  },
+  {
+   "id": "d0tcaba",
+   "name": "Martinez, Gabriela",
+   "cat": "",
+   "tipo": "hermana",
+   "team": "tG"
+  },
+  {
+   "id": "dbez6ax",
+   "name": "Maubrigades, Inés",
+   "cat": "",
+   "tipo": "hermana",
+   "team": "tF"
+  },
+  {
+   "id": "dvhp51j",
+   "name": "Michelena, Federico",
+   "cat": "",
+   "tipo": "hermano",
+   "team": "tD"
+  },
+  {
+   "id": "dc5h7zi",
+   "name": "Moreira, Denise",
+   "cat": "",
+   "tipo": "hermana",
+   "team": "tD"
+  },
+  {
+   "id": "d05etrk",
+   "name": "Pérez, Mikaela",
+   "cat": "",
+   "tipo": "hermana",
+   "team": "tE"
+  },
+  {
+   "id": "d5cgtqz",
+   "name": "Pintos, Michael",
+   "cat": "",
+   "tipo": "hermano",
+   "team": ""
+  },
+  {
+   "id": "d62jnti",
+   "name": "Robinson, Michael",
+   "cat": "",
+   "tipo": "hermano",
+   "team": "tG"
+  }
+ ],
+ "teams": [
+  {
+   "id": "tA",
+   "name": "Equipo A"
+  },
+  {
+   "id": "tB",
+   "name": "Equipo B"
+  },
+  {
+   "id": "tC",
+   "name": "Equipo C"
+  },
+  {
+   "id": "tD",
+   "name": "Equipo D"
+  },
+  {
+   "id": "tE",
+   "name": "Equipo E"
+  },
+  {
+   "id": "tF",
+   "name": "Equipo F"
+  },
+  {
+   "id": "tG",
+   "name": "Equipo G"
+  }
+ ],
+ "gemfix": 1
